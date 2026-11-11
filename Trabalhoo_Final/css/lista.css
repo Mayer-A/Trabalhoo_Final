@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F8F8FF;
+}
+
+@font-face {
+    font-family: pok titulo;
+    src: url('../font/pokemon/Pokemon\ Hollow.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: pok;
+    src: url('../font/pokemon/Pokemon Solid.ttf') format('truetype');
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.menu {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 30px 50px;
+    font-family: pok;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.menu a:not(:last-child) {
+    border-right: 1px solid #333;
+}
+
+.menu a:hover {
+    background-color: #FFE4C4;
+}
+
+.conteudo {
+    width: 90%;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    position: left top;
+}
+
+.pato{
+    height: 400px;
+    width: 400px;
+    float: right;
+}
+
+h1 {
+    font-family: pok titulo;
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+    font-family: pok;
+    color: #000000;
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #333;
+}
