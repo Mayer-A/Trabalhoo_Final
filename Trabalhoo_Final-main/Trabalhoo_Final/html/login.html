@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="../css/galeria.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <img src="../img/eevee.png" alt="Eevee" class="logo">
+
+        <nav class="menu">
+            <a href="../index.html">Home</a>
+            <a href="cadastro_aluno.html">Cadastro</a>
+            <a href="lista.php">Lista</a>
+            <a href="#contact">Info</a>
+        </nav>
+
+    </header>
+
+    <counteudo class="conteudo">
+
+    <div>
+        <p>Login de Aluno</p>
+
+        <!-- Formulário que envia os dados via POST para o login.php -->
+        <form action="../php/login.php" method="POST">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+            <div style="display: flex; gap: 10px; width: 100%;">
+                <input type="submit" value="Entrar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+
+    </counteudo>
+
+    <rodape class="rodape">
+        <p>R. Silveira Martins - Venâncio Aires - Rio Grandd do Sul - telefone: <a
+                href="https://web.whatsapp.com/">51-98732-8921</a></p>
+
+    </rodape>
+</body>
+
+</html>
